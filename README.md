@@ -1,2 +1,2 @@
 # GiulianaFnch.github.io
-teste website
+Olá! Esse é um pequeno projeto de teste de ulilização do GitHub Pages.
