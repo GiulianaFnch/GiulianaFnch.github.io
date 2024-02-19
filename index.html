@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Point and Click Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #game-container {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        margin: 0 auto;
+        border: 2px solid #000;
+        background-image: url('docs/img/backgroundCP.jpg'); /* Adicione o caminho para sua imagem de fundo */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #character {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div id="game-container">
+    <div id="character"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const gameContainer = document.getElementById('game-container');
+    const character = document.getElementById('character');
+    
+    // Função para mover o personagem para a posição do clique
+    function moveCharacter(event) {
+        const x = event.clientX - gameContainer.getBoundingClientRect().left - character.offsetWidth / 2;
+        const y = event.clientY - gameContainer.getBoundingClientRect().top - character.offsetHeight / 2;
+        character.style.left = x + 'px';
+        character.style.top = y + 'px';
+    }
+    
+    // Adicione um evento de clique ao contêiner do jogo
+    gameContainer.addEventListener('click', moveCharacter);
+});
+</script>
+</body>
+</html>
