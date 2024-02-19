@@ -1,6 +1,6 @@
 # GiulianaFnch.github.io
-# public/index.html
 
-Olá! Esse é um pequeno projeto de teste de ulilização do GitHub Pages.
+Aqui está inserido o nosso projeto de criação do jogo "Penguin Adventure".
+Para acessar o jogo basta clicar [aqui](https://giulianafnch.github.io/public/)
 
-Aqui eu vou tentar organizar de forma com que meus projetos possam ser visualizados nessa página web. Meu primeiro projeto no no curso do IEFP foi a criação dessa página web de cavalos. É apenas uma página usada com bootstrap, ainda não muito interativa.s
+
