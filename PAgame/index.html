@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Penguin Adventure</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-    #game-container {
-        position: relative;
-        width: 800px;
-        height: 500px;
-        margin: 0 auto;
-        border: 2px solid #000;
-        background-image: url('docs/img/backgroundCP.jpg'); /* Adicione o caminho para sua imagem de fundo */
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    #character {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        background-image: url('docs/img/penguimvelho.png');
-        background-size: cover;
-        cursor: pointer;
-    }
-</style>
-</head>
-<body>
-<div id="game-container">
-    <div id="character"></div>
-</div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const gameContainer = document.getElementById('game-container');
-    const character = document.getElementById('character');
-    
-    // Função para mover o personagem para a posição do clique
-    function moveCharacter(event) {
-        const x = event.clientX - gameContainer.getBoundingClientRect().left - character.offsetWidth / 2;
-        const y = event.clientY - gameContainer.getBoundingClientRect().top - character.offsetHeight / 2;
-        character.style.left = x + 'px';
-        character.style.top = y + 'px';
-    }
-    
-    // Adicione um evento de clique ao contêiner do jogo
-    gameContainer.addEventListener('click', moveCharacter);
-});
-</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #game-container {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            background-image: url('docs/img/backgroundCP.jpg');
+            /* Adicione o caminho para sua imagem de fundo */
+            background-size: cover;
+        }
+
+        #character {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('docs/img/penguimvelho.png');	
+            background-size: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <overview>
+        <div id="game-container">
+            <div id="character"></div>
+        </div>
+        
+        <h1>Penguim Adventure</h1>
+        <h2>Bem vindo</h2>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const gameContainer = document.getElementById('game-container');
+                const character = document.getElementById('character');
+
+                // Função para mover o personagem para a posição do clique
+                function moveCharacter(event) {
+                    const x = event.clientX - gameContainer.getBoundingClientRect().left - character.offsetWidth / 2;
+                    const y = event.clientY - gameContainer.getBoundingClientRect().top - character.offsetHeight / 2;
+                    
+                    const currentX = parseInt(character.style.left) || 0;
+                    const currentY = parseInt(character.style.top) || 0;
+                    
+                    const distanceX = x - currentX;
+                    const distanceY = y - currentY;
+                    
+                    const stepX = distanceX / 100; // Adjust the speed by changing the divisor
+                    const stepY = distanceY / 100; // Adjust the speed by changing the divisor
+                    
+                    let count = 0;
+                    const moveInterval = setInterval(() => {
+                        count++;
+                        if (count > 100) {
+                            clearInterval(moveInterval);
+                        }
+                        
+                        const newX = currentX + stepX * count;
+                        const newY = currentY + stepY * count;
+                        
+                        character.style.left = newX + 'px';
+                        character.style.top = newY + 'px';
+                    }, 10); // Adjust the interval for smoother or faster movement
+                }
+
+                // Adicione um evento de clique ao contêiner do jogo
+                gameContainer.addEventListener('click', moveCharacter);
+            });
+
+        </script>
+
 </body>
+
 </html>
