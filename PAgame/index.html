@@ -135,11 +135,16 @@
                         characterRect.left < squareRect.right &&
                         characterRect.right > squareRect.left &&
                         characterRect.top < squareRect.bottom &&
-                        characterRect.bottom > squareRect.top 
-                    ) {
-                        showMessage();
+                        characterRect.bottom > squareRect.top
+                    ) {     
+                    // Adicione um evento de teclado para a tecla "e"
+                        document.addEventListener('keydown', function (event) {
+                            if (event.key === 'e') {
+                                showMessage();
+                            }
+                        });
                     }
-                    
+
                 }
 
                 // Função para exibir a mensagem
@@ -149,6 +154,9 @@
 
                 // Adicione um evento de clique ao contêiner do jogo
                 gameContainer.addEventListener('click', moveCharacter);
+
+
+
             });
 
         </script>
