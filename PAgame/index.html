@@ -9,7 +9,6 @@
     <link rel="icon" href="docs/img/penguimvelho.png" type="image/x-icon">
 
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -20,7 +19,8 @@
         #game-container {
             position: relative;
             width: 1000px;
-            height: 80vh; /* Changed to 80% of viewport height */
+            height: 80vh;
+            /* Changed to 80% of viewport height */
             margin: 0 auto;
             border: 2px solid #000;
             background-image: url('docs/img/backgroundCP.jpg');
@@ -28,11 +28,20 @@
             background-size: cover;
         }
 
+        @media (max-width: 768px) {
+            #game-container {
+                width: 90vw;
+                /* Adjust the width for smaller screens */
+                height: 90vw;
+                /* Adjust the height for smaller screens */
+            }
+        }
+
         #character {
             position: absolute;
             width: 50px;
             height: 50px;
-            background-image: url('docs/img/penguimvelho.png');	
+            background-image: url('docs/img/penguimvelho.png');
             background-size: cover;
             cursor: pointer;
             transition: background-image 0.5s;
@@ -42,7 +51,7 @@
             background-image: url('docs/img/walk.gif');
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -50,7 +59,7 @@
         <div id="game-container">
             <div id="character"></div>
         </div>
-        
+
         <h1>Penguim Adventure</h1>
         <h2>Bem vindo</h2>
 
@@ -63,16 +72,16 @@
                 function moveCharacter(event) {
                     const x = event.clientX - gameContainer.getBoundingClientRect().left - character.offsetWidth / 2;
                     const y = event.clientY - gameContainer.getBoundingClientRect().top - character.offsetHeight / 2;
-                    
+
                     const currentX = parseInt(character.style.left) || 0;
                     const currentY = parseInt(character.style.top) || 0;
-                    
+
                     const distanceX = x - currentX;
                     const distanceY = y - currentY;
-                    
+
                     const stepX = distanceX / 100; // Adjust the speed by changing the divisor
                     const stepY = distanceY / 100; // Adjust the speed by changing the divisor
-                    
+
                     let count = 0;
                     const moveInterval = setInterval(() => {
                         count++;
@@ -82,10 +91,10 @@
                         } else {
                             character.classList.add('walking');
                         }
-                        
+
                         const newX = currentX + stepX * count;
                         const newY = currentY + stepY * count;
-                        
+
                         character.style.left = newX + 'px';
                         character.style.top = newY + 'px';
                     }, 10); // Adjust the interval for smoother or faster movement
