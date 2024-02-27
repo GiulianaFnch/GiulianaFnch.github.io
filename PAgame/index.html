@@ -50,6 +50,27 @@
         #character.walking {
             background-image: url('docs/img/walk.gif');
         }
+
+        #square {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            top: 450px;
+            left: 80px;
+        }
+
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            display: none;
+        }
     </style>
 
 </head>
@@ -58,6 +79,8 @@
     <overview>
         <div id="game-container">
             <div id="character"></div>
+            <div id="square"></div>
+            <div id="message">Bem vindo! You reached the square!</div>
         </div>
 
         <h1>Penguim Adventure</h1>
@@ -67,6 +90,8 @@
             document.addEventListener("DOMContentLoaded", function () {
                 const gameContainer = document.getElementById('game-container');
                 const character = document.getElementById('character');
+                const square = document.getElementById('square');
+                const message = document.getElementById('message');
 
                 // Função para mover o personagem para a posição do clique
                 function moveCharacter(event) {
@@ -88,6 +113,7 @@
                         if (count > 100) {
                             clearInterval(moveInterval);
                             character.classList.remove('walking');
+                            checkCollision();
                         } else {
                             character.classList.add('walking');
                         }
@@ -98,6 +124,27 @@
                         character.style.left = newX + 'px';
                         character.style.top = newY + 'px';
                     }, 10); // Adjust the interval for smoother or faster movement
+                }
+
+                // Função para verificar a colisão entre o personagem e o quadrado
+                function checkCollision() {
+                    const characterRect = character.getBoundingClientRect();
+                    const squareRect = square.getBoundingClientRect();
+
+                    if (
+                        characterRect.left < squareRect.right &&
+                        characterRect.right > squareRect.left &&
+                        characterRect.top < squareRect.bottom &&
+                        characterRect.bottom > squareRect.top 
+                    ) {
+                        showMessage();
+                    }
+                    
+                }
+
+                // Função para exibir a mensagem
+                function showMessage() {
+                    message.style.display = 'block';
                 }
 
                 // Adicione um evento de clique ao contêiner do jogo
