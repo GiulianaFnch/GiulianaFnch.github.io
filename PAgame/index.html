@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Adventure</title>
+
+    <link rel="icon" href="docs/img/penguimvelho.png" type="image/x-icon">
+
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -31,8 +35,14 @@
             background-image: url('docs/img/penguimvelho.png');	
             background-size: cover;
             cursor: pointer;
+            transition: background-image 0.5s;
+        }
+
+        #character.walking {
+            background-image: url('docs/img/walk.gif');
         }
     </style>
+    
 </head>
 
 <body>
@@ -68,6 +78,9 @@
                         count++;
                         if (count > 100) {
                             clearInterval(moveInterval);
+                            character.classList.remove('walking');
+                        } else {
+                            character.classList.add('walking');
                         }
                         
                         const newX = currentX + stepX * count;
