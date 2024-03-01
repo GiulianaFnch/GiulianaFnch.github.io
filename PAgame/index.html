@@ -169,7 +169,7 @@
                 // Função para exibir a mensagem
                 function showMessage() {
                     if (currentMessageIndex < messages.length) {
-                        // Excluir a mensagem anterior
+                    
                         if (currentMessageIndex > 0) {
                             messages[currentMessageIndex - 1].style.display = 'none';
                         }
@@ -195,6 +195,10 @@
                 if (username !== null && username.trim() !== "") {
                     // Exibir o nome de usuário na página
                     document.getElementById("usernameDisplay").innerHTML = username;
+
+                    //teste
+                    document.getElementById("message1").innerHTML = "Bem vindo(a), " + username + "! Pronto para começar? <br><br> Clique a tecla E para o próximo.";
+
                 } else {
                     // Se não houver nome de usuário salvo, exibir uma mensagem
                     alert("Por favor, insira um nome de usuário. Você será redirecionado para a página de login.");
