@@ -6,6 +6,25 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+ /* Estilos para o container do código */
+ .code-container {
+	background-color: #2d2d2d; /* Fundo escuro */
+	border-radius: 8px; /* Bordas arredondadas */
+	padding: 20px; /* Espaçamento interno */
+	margin: 20px 0; /* Espaçamento externo */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+	overflow-x: auto; /* Permitir rolagem horizontal */
+}
+
+/* Estilos para o texto do código */
+.code-container code {
+	font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
+	color: #ffffff; /* Cor do texto */
+	font-size: 16px; /* Tamanho do texto */
+	line-height: 1.5; /* Altura da linha */
+	display: block; /* Exibição em bloco */
+	white-space: pre; /* Preservar espaços em branco */
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
