@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Sitting & Dog Walking - Giuliana</title>
+    <link rel="stylesheet" href="../portfolio/assets/css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #ff6347;
+            font-weight: bold;
+        }
+        section {
+            padding: 2em 0;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            scroll-snap-align: center;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .language-switch {
+            text-align: center;
+            margin: 1em 0;
+        }
+        .language-switch button {
+            margin: 0 0.5em;
+            padding: 0.5em 1em;
+            border: none;
+            background-color: #ff6347;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pet Sitting & Dog Walking - Giuliana</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#petsitting">Pet Sitting</a>
+        <a href="#dogwalking">Dog Walking</a>
+        <a href="#petboarding">Pet Boarding</a>
+    </nav>
+    <div class="language-switch">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('pt')">Português</button>
+    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Giuliana, a passionate pet sitter and dog walker. I love animals and have been taking care of pets for over 5 years.</p>
+        <div class="carousel">
+            <img src="images/1c6eb7ff-2b8d-4d5d-8efe-8c4176320435.jpg" alt="About me image 1">
+            <img src="images/2464BC40-BF7A-4ACD-81E3-EB77C63A7AAA.jpg" alt="About me image 2">
+            <img src="images/6A4534C2-028B-423F-85C2-CA21D78954A4.jpg" alt="About me image 3">
+        </div>
+    </section>
+    <section id="petsitting">
+        <h2>Pet Sitting</h2>
+        <p>I offer pet sitting services to ensure your pets are well taken care of while you're away.</p>
+        <div class="carousel">
+            <img src="images/6F3CCA03-04A6-4291-8DCE-0AD65B65A10A.jpg" alt="Pet sitting image 1">
+            <img src="images/88C354A3-0E99-4551-AA15-0182B11B9FC3.jpg" alt="Pet sitting image 2">
+            <img src="images/CFF83A4A-2DC5-4E3F-87A5-A0BF8DD6C5FA.jpg" alt="Pet sitting image 3">
+        </div>
+    </section>
+    <section id="dogwalking">
+        <h2>Dog Walking</h2>
+        <p>Regular dog walking services to keep your dog healthy and happy.</p>
+        <div class="carousel">
+            <img src="images/IMG_3574.JPG" alt="Dog walking image 1">
+            <img src="images/IMG_5205_Original.JPG" alt="Dog walking image 2">
+            <img src="images/IMG_4144.HEIC" alt="Dog walking image 3">
+        </div>
+    </section>
+    <section id="petboarding">
+        <h2>Pet Boarding</h2>
+        <p>Safe and comfortable pet boarding services for your pets.</p>
+        <div class="carousel">
+            <img src="images/petboarding1.jpg" alt="Pet boarding image 1">
+            <img src="images/petboarding2.jpg" alt="Pet boarding image 2">
+            <img src="images/petboarding3.jpg" alt="Pet boarding image 3">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Giuliana Finochio. All rights reserved.</p>
+    </footer>
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                document.querySelector('h1').textContent = 'Pet Sitting & Dog Walking - Giuliana';
+                document.querySelector('nav a[href="#about"]').textContent = 'About Me';
+                document.querySelector('nav a[href="#petsitting"]').textContent = 'Pet Sitting';
+                document.querySelector('nav a[href="#dogwalking"]').textContent = 'Dog Walking';
+                document.querySelector('nav a[href="#petboarding"]').textContent = 'Pet Boarding';
+                document.querySelector('#about h2').textContent = 'About Me';
+                document.querySelector('#about p').textContent = "Hi, I'm Giuliana, a passionate pet sitter and dog walker. I love animals and have been taking care of pets for over 5 years.";
+                document.querySelector('#petsitting h2').textContent = 'Pet Sitting';
+                document.querySelector('#petsitting p').textContent = "I offer pet sitting services to ensure your pets are well taken care of while you're away.";
+                document.querySelector('#dogwalking h2').textContent = 'Dog Walking';
+                document.querySelector('#dogwalking p').textContent = "Regular dog walking services to keep your dog healthy and happy.";
+                document.querySelector('#petboarding h2').textContent = 'Pet Boarding';
+                document.querySelector('#petboarding p').textContent = "Safe and comfortable pet boarding services for your pets.";
+            } else if (lang === 'pt') {
+                document.querySelector('h1').textContent = 'Cuidados e Passeios para Pets - Giuliana';
+                document.querySelector('nav a[href="#about"]').textContent = 'Sobre Mim';
+                document.querySelector('nav a[href="#petsitting"]').textContent = 'Cuidados para Pets';
+                document.querySelector('nav a[href="#dogwalking"]').textContent = 'Passeios com Cães';
+                document.querySelector('nav a[href="#petboarding"]').textContent = 'Hospedagem para Pets';
+                document.querySelector('#about h2').textContent = 'Sobre Mim';
+                document.querySelector('#about p').textContent = "Olá, sou Giuliana, uma apaixonada cuidadora de pets e passeadora de cães. Amo animais e cuido de pets há mais de 5 anos.";
+                document.querySelector('#petsitting h2').textContent = 'Cuidados para Pets';
+                document.querySelector('#petsitting p').textContent = "Ofereço serviços de cuidados para pets para garantir que seus pets sejam bem cuidados enquanto você estiver fora.";
+                document.querySelector('#dogwalking h2').textContent = 'Passeios com Cães';
+                document.querySelector('#dogwalking p').textContent = "Serviços regulares de passeios com cães para manter seu cão saudável e feliz.";
+                document.querySelector('#petboarding h2').textContent = 'Hospedagem para Pets';
+                document.querySelector('#petboarding p').textContent = "Serviços seguros e confortáveis de hospedagem para seus pets.";
+            }
+        }
+    </script>
+</body>
+</html>
