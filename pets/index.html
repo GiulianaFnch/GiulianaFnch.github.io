@@ -1,168 +1,233 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Sitting & Dog Walking - Giuliana</title>
-    <link rel="stylesheet" href="../portfolio/assets/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #e0f7fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0288d1;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-            border: 5px solid #4fc3f7;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin: 1em 0;
-            border: 5px solid #4fc3f7;
-            padding: 1em;
-        }
-        nav a {
-            margin: 0 1em;
-            text-decoration: none;
-            color: #0288d1;
-            font-weight: bold;
-        }
-        section {
-            padding: 2em 0;
-            border: 5px solid #4fc3f7;
-            margin: 1em;
-        }
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-        }
-        .carousel img {
-            width: 100%;
-            height: auto;
-            scroll-snap-align: center;
-            max-height: 300px; /* Add this line to set a maximum height */
-        }
-        .carousel::-webkit-scrollbar {
-            display: none;
-        }
-        .language-switch {
-            text-align: center;
-            margin: 1em 0;
-            border: 5px solid #4fc3f7;
-            padding: 1em;
-        }
-        .language-switch button {
-            margin: 0 0.5em;
-            padding: 0.5em 1em;
-            border: none;
-            background-color: #0288d1;
-            color: white;
-            cursor: pointer;
-        }
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #0288d1;
-            color: white;
-            border: 5px solid #4fc3f7;
-        }
-    </style>
+    <title>Pet Sitter Giuliana</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Language" content="pt" />
+    <link rel="stylesheet" href="../portfolio/assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../portfolio/assets/css/noscript.css" />
+    </noscript>
 </head>
-<body>
-    <header>
-        <h1>Pet Sitting & Dog Walking - Giuliana</h1>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#petsitting">Pet Sitting</a>
-        <a href="#dogwalking">Dog Walking</a>
-        <a href="#petboarding">Pet Boarding</a>
-    </nav>
-    <div class="language-switch">
-        <button onclick="switchLanguage('en')">English</button>
-        <button onclick="switchLanguage('pt')">Português</button>
-    </div>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Giuliana, a passionate pet sitter and dog walker. I love animals and have been taking care of pets for over 5 years.</p>
-        <div class="carousel">
-            <img src="images/1c6eb7ff-2b8d-4d5d-8efe-8c4176320435.jpg" alt="About me image 1">
-            <img src="images/2464BC40-BF7A-4ACD-81E3-EB77C63A7AAA.jpg" alt="About me image 2">
-            <img src="images/6A4534C2-028B-423F-85C2-CA21D78954A4.jpg" alt="About me image 3">
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>Pet Sitting</strong> <span>Giuliana Finochio</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#one">Serviços</a></li>
+                <li><a href="#two">Galeria</a></li>
+                <li><a href="#two">Como funciona</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Começar</a></li>
+                <!--<li><a href="#" class="button fit">Log In</a></li>-->
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1>Olá, sou a Giuliana!</h1>
+                </header>
+                <div class="content">
+                    <p>Sou uma cuidadora de pets e aqui você poderá<br />
+                        conhecer meus serviços :)</p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button next scrolly">Começar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one" class="tiles">
+                <article>
+                    <span class="image">
+                        <img src="images/petsitting.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://giulianafnch.000webhostapp.com/crud1/" class="link">Pet Sitting</a></h3>
+                        <p>Vou até sua casa cuidar do seu pet</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/dogwalking.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://giulianafnch.000webhostapp.com/horsed/" class="link">Dog Walking</a></h3>
+                        <p>Passeios com seu cão</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/petboarding.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://giulianafnch.github.io/PAgame/login.html" class="link">Pet Boarding</a></h3>
+                        <p>Hospedagem para o seu pet</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic04.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://www.petbacker.com/portugal/sitting/porto/vila-nova-de-gaia/pet-sitter-em-porto-gaia-home-visit-pet-sitter" class="link">Aplicação Pet Backer</a></h3>
+                        <p>Clique para ver mais informações</p>
+                    </header>
+                </article>
+                <!--
+                <article>
+                    <span class="image">
+                        <img src="images/pic05.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://github.com/GiulianaFnch/FlaskBlog" class="link">Penguin Blog</a></h3>
+                        <p>Site voltado para utilizadores do antigo ClubPenguin desenvolvido em Python</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic06.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://giulianafnch.000webhostapp.com/if/vaga_emprego/" class="link">Vagas de
+                                Emprego</a></h3>
+                        <p>Um site de procura de vagas de emprego com sessões</p>
+                    </header>
+                </article>-->
+            </section>
+
+            <!-- Gallery
+            <section id="two" class="spotlights"> -->
+
+                
+
+            <!-- Two -->
+            <section id="three">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Como funciona</h2>
+                    </header>
+                    <p>O processo é simples e rápido. Basta escolher o serviço desejado, agendar um horário e pronto! Estarei disponível para cuidar do seu pet com todo carinho e atenção. </p>
+                    <p>Valores a partir de 10€/hora a depender da disponibilidade e do serviço escolhido!</p>
+                    <p>Acesse a aplicação "Pet Backer" para ver detalhes, avaliações e agendar serviços.
+                    <br>Se tiver alguma dúvida, não hesite em me contactar diretamente!</p>
+                    <ul class="actions">
+                        <li><a href="https://www.petbacker.com/portugal/sitting/porto/vila-nova-de-gaia/pet-sitter-em-porto-gaia-home-visit-pet-sitter" class="button next scrolly"">Aceder</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+                                <div class="inner">
+                                    <section>
+                                        <form method="post" action="#">
+                                            <div class="fields">
+                                                <div class="field half">
+                                                    <label for="name">Nome</label>
+                                                    <input type="text" name="name" id="name" />
+                                                </div>
+                                                <div class="field half">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" name="email" id="email" />
+                                                </div>
+                                                <div class="field">
+                                                    <label for="message">Mensagem</label>
+                                                    <textarea name="message" id="message" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                            <ul class="actions">
+                                                <li><input type="submit" value="Enviar mensagem" class="primary" /></li>
+                                                <li><input type="reset" value="Limpar" /></li>
+                                            </ul>
+                                        </form>
+                                    </section>
+                                    <section class="split">
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-envelope"></span>
+                                                <h3>Email</h3>
+                                                <a href="#">finochio44@gmail.com</a>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-phone"></span>
+                                                <h3>Telemóvel</h3>
+                                                <span>+351 910 446 789</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-home"></span>
+                                                <h3>Morada</h3>
+                                                <span>Canidelo, Vila Nova de Gaia<br />
+                                                    Portugal</span>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li><a href="https://instagram.com/giulianafnch/" class="icon brands alt fa-instagram"><span
+                                    class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/GiulianaFnch" class="icon brands alt fa-github"><span
+                                    class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/giuliana-finochio-b8a42a225/"
+                                class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Giuliana</li>
+                        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
         </div>
-    </section>
-    <section id="petsitting">
-        <h2>Pet Sitting</h2>
-        <p>I offer pet sitting services to ensure your pets are well taken care of while you're away.</p>
-        <div class="carousel">
-            <img src="images/6F3CCA03-04A6-4291-8DCE-0AD65B65A10A.jpg" alt="Pet sitting image 1">
-            <img src="images/88C354A3-0E99-4551-AA15-0182B11B9FC3.jpg" alt="Pet sitting image 2">
-            <img src="images/CFF83A4A-2DC5-4E3F-87A5-A0BF8DD6C5FA.jpg" alt="Pet sitting image 3">
-        </div>
-    </section>
-    <section id="dogwalking">
-        <h2>Dog Walking</h2>
-        <p>Regular dog walking services to keep your dog healthy and happy.</p>
-        <div class="carousel">
-            <img src="images/IMG_3574.JPG" alt="Dog walking image 1">
-            <img src="images/IMG_5205_Original.JPG" alt="Dog walking image 2">
-            <img src="images/IMG_4144.HEIC" alt="Dog walking image 3">
-        </div>
-    </section>
-    <section id="petboarding">
-        <h2>Pet Boarding</h2>
-        <p>Safe and comfortable pet boarding services for your pets.</p>
-        <div class="carousel">
-            <img src="images/petboarding1.jpg" alt="Pet boarding image 1">
-            <img src="images/petboarding2.jpg" alt="Pet boarding image 2">
-            <img src="images/petboarding3.jpg" alt="Pet boarding image 3">
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2023 Giuliana Finochio. All rights reserved.</p>
-    </footer>
-    <script>
-        function switchLanguage(lang) {
-            if (lang === 'en') {
-                document.querySelector('h1').textContent = 'Pet Sitting & Dog Walking - Giuliana';
-                document.querySelector('nav a[href="#about"]').textContent = 'About Me';
-                document.querySelector('nav a[href="#petsitting"]').textContent = 'Pet Sitting';
-                document.querySelector('nav a[href="#dogwalking"]').textContent = 'Dog Walking';
-                document.querySelector('nav a[href="#petboarding"]').textContent = 'Pet Boarding';
-                document.querySelector('#about h2').textContent = 'About Me';
-                document.querySelector('#about p').textContent = "Hi, I'm Giuliana, a passionate pet sitter and dog walker. I love animals and have been taking care of pets for over 5 years.";
-                document.querySelector('#petsitting h2').textContent = 'Pet Sitting';
-                document.querySelector('#petsitting p').textContent = "I offer pet sitting services to ensure your pets are well taken care of while you're away.";
-                document.querySelector('#dogwalking h2').textContent = 'Dog Walking';
-                document.querySelector('#dogwalking p').textContent = "Regular dog walking services to keep your dog healthy and happy.";
-                document.querySelector('#petboarding h2').textContent = 'Pet Boarding';
-                document.querySelector('#petboarding p').textContent = "Safe and comfortable pet boarding services for your pets.";
-            } else if (lang === 'pt') {
-                document.querySelector('h1').textContent = 'Cuidados e Passeios para Pets - Giuliana';
-                document.querySelector('nav a[href="#about"]').textContent = 'Sobre Mim';
-                document.querySelector('nav a[href="#petsitting"]').textContent = 'Cuidados para Pets';
-                document.querySelector('nav a[href="#dogwalking"]').textContent = 'Passeios com Cães';
-                document.querySelector('nav a[href="#petboarding"]').textContent = 'Hospedagem para Pets';
-                document.querySelector('#about h2').textContent = 'Sobre Mim';
-                document.querySelector('#about p').textContent = "Olá, sou Giuliana, uma apaixonada cuidadora de pets e passeadora de cães. Amo animais e cuido de pets há mais de 5 anos.";
-                document.querySelector('#petsitting h2').textContent = 'Cuidados para Pets';
-                document.querySelector('#petsitting p').textContent = "Ofereço serviços de cuidados para pets para garantir que seus pets sejam bem cuidados enquanto você estiver fora.";
-                document.querySelector('#dogwalking h2').textContent = 'Passeios com Cães';
-                document.querySelector('#dogwalking p').textContent = "Serviços regulares de passeios com cães para manter seu cão saudável e feliz.";
-                document.querySelector('#petboarding h2').textContent = 'Hospedagem para Pets';
-                document.querySelector('#petboarding p').textContent = "Serviços seguros e confortáveis de hospedagem para seus pets.";
-            }
-        }
-    </script>
+
+        <!-- Scripts -->
+        <script src="../portfolio/assets/js/jquery.min.js"></script>
+        <script src="../portfolio/assets/js/jquery.scrolly.min.js"></script>
+        <script src="../portfolio/assets/js/jquery.scrollex.min.js"></script>
+        <script src="../portfolio/assets/js/browser.min.js"></script>
+        <script src="../portfolio/assets/js/breakpoints.min.js"></script>
+        <script src="../portfolio/assets/js/util.js"></script>
+        <script src="../portfolio/assets/js/main.js"></script>
+
 </body>
+
 </html>
