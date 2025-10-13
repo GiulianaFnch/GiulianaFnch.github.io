@@ -4,7 +4,7 @@ Olá!
 
 Bem-vindo(a) ao meu repositório de projetos pessoais e profissionais.
 
-Neste espaço encontra o meu website de pet sitting para a região do Porto ([/pets][https://giulianafnch.github.io/pets/]). Estou a desenvolver as secções de equitação e o portfólio de programação.
+Neste espaço encontra o meu website de pet sitting para a região do Porto [(/pets)](https://giulianafnch.github.io/pets/). Estou a desenvolver as secções de equitação e o portfólio de programação.
 
 Este site está em constante evolução — obrigada pela paciência. Explore os projetos e sinta-se à vontade para entrar em contacto.
 
