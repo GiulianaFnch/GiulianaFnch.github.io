@@ -1,233 +1,448 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-<head>
-    <title>Pet Sitter Giuliana</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta http-equiv="Content-Language" content="pt" />
-    <link rel="stylesheet" href="../portfolio/assets/css/main.css" />
-    <noscript>
-        <link rel="stylesheet" href="../portfolio/assets/css/noscript.css" />
-    </noscript>
-</head>
-
-<body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>Pet Sitting</strong> <span>Giuliana Finochio</span></a>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-        </header>
-
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#one">Serviços</a></li>
-                <li><a href="#two">Galeria</a></li>
-                <li><a href="#two">Como funciona</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Começar</a></li>
-                <!--<li><a href="#" class="button fit">Log In</a></li>-->
-            </ul>
-        </nav>
-
-        <!-- Banner -->
-        <section id="banner" class="major">
-            <div class="inner">
-                <header class="major">
-                    <h1>Olá, sou a Giuliana!</h1>
-                </header>
-                <div class="content">
-                    <p>Sou uma cuidadora de pets e aqui você poderá<br />
-                        conhecer meus serviços :)</p>
-                    <ul class="actions">
-                        <li><a href="#one" class="button next scrolly">Começar</a></li>
-                    </ul>
+<!DOCTYPE html>
+<html lang="pt"><head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Giuliana - Pet Care Expert</title>
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet" />
+        <style>
+        .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+    </style>
+        <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4a7c59',
+                        'background-light': '#f5f3f0',
+                        'background-dark': '#2d3748',
+                        'accent': '#d4d0c1',
+                        'text-light': '#333333',
+                        'text-dark': '#f7fafc',
+                    },
+                    fontFamily: {
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'DEFAULT': '0.5rem',
+                        'lg': '1rem',
+                        'full': '9999px',
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+    <body
+        class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark transition-colors duration-300">
+        <header class="bg-primary text-white">
+            <div
+                class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 relative mb-8 md:mb-0 flex justify-center">
+                    <div
+                        class="absolute top-0 left-0 w-24 h-24 bg-accent/50 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                    <div
+                        class="absolute bottom-0 right-0 w-20 h-20 bg-accent/50 rounded-full translate-x-1/2 translate-y-1/2"></div>
+                    <div
+                        class="absolute top-1/4 -right-12 w-16 h-16 bg-accent/50 rounded-full hidden md:block"></div>
+                    <div class="relative w-80 h-80 md:w-96 md:h-96">
+                        <img
+                            alt="Giuliana sorrindo e abraçando um cachorro da raça Border Collie"
+                            class="rounded-full object-cover w-full h-full shadow-lg"
+                            src="images/abraco.png" />
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold">PET SITTING</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mt-2">CUIDADOS
+                        COM ANIMAIS</h2>
+                    <p class="mt-4 text-lg">Ofereço serviços de <strong>Pet
+                            Sitting</strong> e <strong>Dog Walking</strong> em
+                        Canidelo – Vila Nova de Gaia e Porto.</p>
+                    <p class="mt-6 font-semibold tracking-wider">GIULIANA – PET
+                        CARE EXPERT</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- One -->
-            <section id="one" class="tiles">
-                <article>
-                    <span class="image">
-                        <img src="images/petsitting.jpg" alt="" />
-                    </span>
-                    <header class="major">
-                        <h3><a href="https://giulianafnch.000webhostapp.com/crud1/" class="link">Pet Sitting</a></h3>
-                        <p>Vou até sua casa cuidar do seu pet</p>
-                    </header>
-                </article>
-                <article>
-                    <span class="image">
-                        <img src="images/dogwalking.jpg" alt="" />
-                    </span>
-                    <header class="major">
-                        <h3><a href="https://giulianafnch.000webhostapp.com/horsed/" class="link">Dog Walking</a></h3>
-                        <p>Passeios com seu cão</p>
-                    </header>
-                </article>
-                <article>
-                    <span class="image">
-                        <img src="images/petboarding.jpg" alt="" />
-                    </span>
-                    <header class="major">
-                        <h3><a href="https://giulianafnch.github.io/PAgame/login.html" class="link">Pet Boarding</a></h3>
-                        <p>Hospedagem para o seu pet</p>
-                    </header>
-                </article>
-                <article>
-                    <span class="image">
-                        <img src="images/pic04.jpg" alt="" />
-                    </span>
-                    <header class="major">
-                        <h3><a href="https://www.petbacker.com/portugal/sitting/porto/vila-nova-de-gaia/pet-sitter-em-porto-gaia-home-visit-pet-sitter" class="link">Aplicação Pet Backer</a></h3>
-                        <p>Clique para ver mais informações</p>
-                    </header>
-                </article>
-                <!--
-                <article>
-                    <span class="image">
-                        <img src="images/pic05.jpg" alt="" />
-                    </span>
-                    <header class="major">
-                        <h3><a href="https://github.com/GiulianaFnch/FlaskBlog" class="link">Penguin Blog</a></h3>
-                        <p>Site voltado para utilizadores do antigo ClubPenguin desenvolvido em Python</p>
-                    </header>
-                </article>
-                <article>
-                    <span class="image">
-                        <img src="images/pic06.jpg" alt="" />
-                    </span>
-                    <header class="major">
-                        <h3><a href="https://giulianafnch.000webhostapp.com/if/vaga_emprego/" class="link">Vagas de
-                                Emprego</a></h3>
-                        <p>Um site de procura de vagas de emprego com sessões</p>
-                    </header>
-                </article>-->
-            </section>
-
-            <!-- Gallery
-            <section id="two" class="spotlights"> -->
-
-                
-
-            <!-- Two -->
-            <section id="three">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Como funciona</h2>
-                    </header>
-                    <p>O processo é simples e rápido. Basta escolher o serviço desejado, agendar um horário e pronto! Estarei disponível para cuidar do seu pet com todo carinho e atenção. </p>
-                    <p>Valores a partir de 10€/hora a depender da disponibilidade e do serviço escolhido!</p>
-                    <p>Acesse a aplicação "Pet Backer" para ver detalhes, avaliações e agendar serviços.
-                    <br>Se tiver alguma dúvida, não hesite em me contactar diretamente!</p>
-                    <ul class="actions">
-                        <li><a href="https://www.petbacker.com/portugal/sitting/porto/vila-nova-de-gaia/pet-sitter-em-porto-gaia-home-visit-pet-sitter" class="button next scrolly"">Aceder</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-                                <div class="inner">
-                                    <section>
-                                        <form method="post" action="#">
-                                            <div class="fields">
-                                                <div class="field half">
-                                                    <label for="name">Nome</label>
-                                                    <input type="text" name="name" id="name" />
-                                                </div>
-                                                <div class="field half">
-                                                    <label for="email">Email</label>
-                                                    <input type="text" name="email" id="email" />
-                                                </div>
-                                                <div class="field">
-                                                    <label for="message">Mensagem</label>
-                                                    <textarea name="message" id="message" rows="6"></textarea>
-                                                </div>
-                                            </div>
-                                            <ul class="actions">
-                                                <li><input type="submit" value="Enviar mensagem" class="primary" /></li>
-                                                <li><input type="reset" value="Limpar" /></li>
-                                            </ul>
-                                        </form>
-                                    </section>
-                                    <section class="split">
-                                        <section>
-                                            <div class="contact-method">
-                                                <span class="icon solid alt fa-envelope"></span>
-                                                <h3>Email</h3>
-                                                <a href="#">finochio44@gmail.com</a>
-                                            </div>
-                                        </section>
-                                        <section>
-                                            <div class="contact-method">
-                                                <span class="icon solid alt fa-phone"></span>
-                                                <h3>Telemóvel</h3>
-                                                <span>+351 910 446 789</span>
-                                            </div>
-                                        </section>
-                                        <section>
-                                            <div class="contact-method">
-                                                <span class="icon solid alt fa-home"></span>
-                                                <h3>Morada</h3>
-                                                <span>Canidelo, Vila Nova de Gaia<br />
-                                                    Portugal</span>
-                                            </div>
-                                        </section>
-                                    </section>
-                                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer id="footer">
-                <div class="inner">
-                    <ul class="icons">
-                        <li><a href="https://instagram.com/giulianafnch/" class="icon brands alt fa-instagram"><span
-                                    class="label">Instagram</span></a></li>
-                        <li><a href="https://github.com/GiulianaFnch" class="icon brands alt fa-github"><span
-                                    class="label">GitHub</span></a></li>
-                        <li><a href="https://www.linkedin.com/in/giuliana-finochio-b8a42a225/"
-                                class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    </ul>
-                    <ul class="copyright">
-                        <li>&copy; Giuliana</li>
-                        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-                    </ul>
+        </header>
+        <main class="container mx-auto px-6 py-16">
+            <section class="mb-16" id="servicos">
+                <h2
+                    class="text-3xl font-bold text-center mb-12 text-primary">Nossos
+                    Serviços</h2>
+                <div class="flex flex-col md:flex-row justify-center gap-12">
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md w-full md:w-1/3 text-center">
+                        <span
+                            class="material-icons text-5xl text-primary mx-auto mb-4">house</span>
+                        <h3
+                            class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Pet
+                            Sitting</h3>
+                        <p
+                            class="text-gray-600 dark:text-gray-300 mb-4">Cuidamos
+                            do seu pet no conforto do seu lar, mantendo a rotina
+                            e o bem-estar dele.</p>
+                        <ul
+                            class="text-left space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Alimentação
+                                e água fresca</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Brincadeiras
+                                e carinho</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Limpeza
+                                do ambiente</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Administração
+                                de medicamentos</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md w-full md:w-1/3 text-center">
+                        <span
+                            class="material-icons text-5xl text-primary mx-auto mb-4">pets</span>
+                        <h3
+                            class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Dog
+                            Walking</h3>
+                        <p
+                            class="text-gray-600 dark:text-gray-300 mb-4">Passeios
+                            divertidos e seguros para seu cão gastar energia e
+                            socializar.</p>
+                        <ul
+                            class="text-left space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Passeios
+                                individuais ou em grupo</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Duração
+                                flexível (30 a 60 min)</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Foco
+                                em exercício e estímulo mental</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-primary mr-2">check_circle</span>Relatórios
+                                com fotos e vídeos</li>
+                        </ul>
+                    </div>
                 </div>
-            </footer>
+            </section>
+            <section class="mb-16" id="galeria">
+                <h2
+                    class="text-3xl font-bold text-center mb-12 text-primary">Experiências</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-md"><img
+                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                            src="images/doispraia.jpg" /></div>
+                    <div class="overflow-hidden rounded-lg shadow-md"><img
+                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                            src="images/bella.JPG" /></div>
+                    <div class="overflow-hidden rounded-lg shadow-md"><img
+                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                            src="images/food.jpg" /></div>
+                    <div class="overflow-hidden rounded-lg shadow-md"><img
+                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                            src="images/praia.PNG" /></div>
+                    <div class="overflow-hidden rounded-lg shadow-md"><img
+                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                            src="images/gatinha.jpg" /></div>
+                    <div class="overflow-hidden rounded-lg shadow-md"><img
+                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                            src="images/dogwalking.jpg" /></div>
+                </div>
+            </section>
+            <section class="mb-16" id="avaliacoes">
+                <h2
+                    class="text-3xl font-bold text-center mb-12 text-primary">Avaliações
+                    de Clientes</h2>
+                <div class="relative">
+                    <div class="overflow-hidden" id="carousel">
+                        <div class="carousel-item active">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">atrumgeost</p>
+                                    <div class="flex text-yellow-400">
+                                        <span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"Giuliana was very patient, kind, and most importantly, kept our cats happy. 100% recommended!"</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">Ivana</p>
+                                    <div class="flex text-yellow-400">
+                                        <span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"Não podia estar mais agradecida pelo excelente cuidado que a Giuliana deu aos meus 2 gatos durante os 24 dias em que estive fora. Foi fantástica e tratou deles como se fossem seus, garantindo que estivessem felizes, saudáveis e confortáveis. Dá para perceber que adora gatos, porque os meus gatos estavam super tranquilos e bem tratados quando voltei. Além disso, manteve-me sempre atualizada, o que me deu muita tranquilidade. Recomendo 100% a Giuliana e família a quem precisar de alguém de confiança para cuidar dos seus gatos, será a nossa primeira escolha quando voltarmos a precisar. Muito obrigada por tudo—foi incrível!"</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">tkpookie74</p>
+                                    <div class="flex text-yellow-400">
+                                        <span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span><span
+                                            class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"Just amazing. Anybody is lucky to have Giuliana sit for their babies. The two babies absolutely adored her she communicated wonderfully, took care of both the babies and our home, and we hope she made our home her home. We can’t wait until she gets to come and spend time with the fur babies again."</p>
+                            </div>
+                        </div>
 
-        </div>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">MAGGIE</p>
+                                    <div class="flex text-yellow-400">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"Giuliana is a kind hearted lady with strong responsibility of taking care of my dog. No hesitation in recommending her to other dog owners."</p>
+                            </div>
+                        </div>
 
-        <!-- Scripts -->
-        <script src="../portfolio/assets/js/jquery.min.js"></script>
-        <script src="../portfolio/assets/js/jquery.scrolly.min.js"></script>
-        <script src="../portfolio/assets/js/jquery.scrollex.min.js"></script>
-        <script src="../portfolio/assets/js/browser.min.js"></script>
-        <script src="../portfolio/assets/js/breakpoints.min.js"></script>
-        <script src="../portfolio/assets/js/util.js"></script>
-        <script src="../portfolio/assets/js/main.js"></script>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">Aurelie</p>
+                                    <div class="flex text-yellow-400">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"Giuliana is perfect, couldn't except better!"</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">Vanessa</p>
+                                    <div class="flex text-yellow-400">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"Kayde é uma salsichinha de quase 9 anos que está aprendendo a socializar com outras pessoas e animais. Chegou do Brasil em outubro do ano passado e está adorando a nova experiência. Certeza que está curtindo o passeio com a Giu que tem toda atenção e cautela com ela que é um pouco desconfiada. Super indico o trabalho dela, da pra ver que ama animais. Obrigada Giu"</p>
+                            </div>
+                        </div>
 
-</body>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">Andréa</p>
+                                    <div class="flex text-yellow-400">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"A Kikas e o Gunkie adoraram o passeio! 🥰 obrigada de novo 😊"</p>
+                            </div>
+                        </div>
 
-</html>
+                        <div class="carousel-item">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <p
+                                        class="font-bold text-lg text-gray-800 dark:text-white mr-2">Dominika</p>
+                                    <div class="flex text-yellow-400">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 italic">"I recently moved to Porto and was nervous about finding the right person to walk my senior dog. I highly recommend Giuliana to anyone looking for a reliable and caring pet walker. She’s punctual and friendly, sends pictures and updates from every walk. Thanks to her I can spend a whole day out knowing that my dog is in good hands!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="absolute top-1/2 left-0 md:-left-12 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-md"
+                        id="prevBtn"><span
+                            class="material-icons">arrow_back</span></button>
+                    <button
+                        class="absolute top-1/2 right-0 md:-right-12 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-md"
+                        id="nextBtn"><span
+                            class="material-icons">arrow_forward</span></button>
+                </div>
+            </section>
+            <section
+                class="bg-accent dark:bg-gray-700 text-center py-12 rounded-lg">
+                <h2
+                    class="text-3xl font-bold text-primary dark:text-white">Agende
+                    seu passeio ou cuidado com seu pet hoje!</h2>
+                <a
+                    class="mt-6 inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition-colors duration-300"
+                    href="#contato">
+                    Entrar em Contacto
+                </a>
+            </section>
+            <section class="pt-16" id="contato">
+                <h2
+                    class="text-3xl font-bold text-center mb-12 text-primary">Contacto</h2>
+                <div
+                    class="flex flex-col md:flex-row gap-12 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="w-full md:w-1/2">
+                        <h3
+                            class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Envie
+                            uma Mensagem</h3>
+                        <form action="#" method="POST">
+                            <div class="mb-4">
+                                <label
+                                    class="block text-gray-700 dark:text-gray-300 mb-2"
+                                    for="name">Nome</label>
+                                <input
+                                    class="w-full px-4 py-2 border rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
+                                    id="name" name="name" required
+                                    type="text" />
+                            </div>
+                            <div class="mb-4">
+                                <label
+                                    class="block text-gray-700 dark:text-gray-300 mb-2"
+                                    for="email">Email</label>
+                                <input
+                                    class="w-full px-4 py-2 border rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
+                                    id="email" name="email" required
+                                    type="email" />
+                            </div>
+                            <div class="mb-4">
+                                <label
+                                    class="block text-gray-700 dark:text-gray-300 mb-2"
+                                    for="message">Mensagem</label>
+                                <textarea
+                                    class="w-full px-4 py-2 border rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
+                                    id="message" name="message" required
+                                    rows="4"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-colors duration-300"
+                                type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-10">
+                        <h3
+                            class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Outras
+                            Formas de Contato</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <span
+                                    class="material-icons text-primary mr-3">phone</span>
+                                <a
+                                    class="text-lg text-gray-700 dark:text-gray-300 hover:text-primary"
+                                    href="tel:910446789">910 446 789</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span
+                                    class="material-icons text-primary mr-3">location_on</span>
+                                <p
+                                    class="text-lg text-gray-700 dark:text-gray-300">Canidelo
+                                    – Vila Nova de Gaia e Porto</p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4
+                                class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Ou
+                                adicione-me no WhatsApp</h4>
+                            <img alt="QR Code para contato via WhatsApp"
+                                class="rounded-lg"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ1Rjt6cXdmWB1b3HIEDicQUVNlWcLilsQVFnqhvMraTMXPbOQxM_NsQmLQm8L3A1wVe0Ai6jChCjahmZgf0soncbB2Lhtca3hzUndb-rpnzzNJ2uNFZgprGFP-GUnKLEovmcvvCDDAG7Np2ojmo5k16dqVkq-geyBpzMISVQieXo1QQrdKuFkPb7aRew8rBxUi-s2ygywpbv84_xBqOBupEVgi5E6fs5DdMs1778K4zv_Hto6tUbrLtyXyNgGOZ0XaKfaMVAFq8c" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-primary text-white text-center p-6 mt-16">
+            <p>© 2024 Giuliana Pet Care. Todos os direitos reservados.</p>
+        </footer>
+        <script>
+        const carousel = document.getElementById('carousel');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+        function showItem(index) {
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === index) {
+                    item.classList.add('active');
+                }
+            });
+        }
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+            showItem(currentIndex);
+        });
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+            showItem(currentIndex);
+        });
+        // Auto-play
+        setInterval(() => {
+            nextBtn.click();
+        }, 5000);
+    </script>
+
+    </body></html>
