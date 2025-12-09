@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style="scroll-behavior: smooth;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giuliana - AI Applications Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3d97d0",
+                        "accent": "#f4bd5f",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#131022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(-25%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.remove('opacity-0', '-translate-y-full');
+                    header.classList.add('opacity-100', 'translate-y-0');
+                } else {
+                    header.classList.remove('opacity-100', 'translate-y-0');
+                    header.classList.add('opacity-0', '-translate-y-full');
+                }
+            });
+        });
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#100d1b] dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="fixed top-0 z-50 w-full border-b border-gray-200/50 bg-background-light/80 opacity-0 backdrop-blur-sm transition-all duration-300 ease-in-out dark:border-gray-800/50 dark:bg-background-dark/80 -translate-y-full" id="main-header">
+<div class="mx-auto flex max-w-[960px] items-center justify-between whitespace-nowrap px-4 py-3">
+<div class="flex items-center gap-4 text-[#100d1b] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#100d1b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Giuliana</h2>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4 md:gap-8">
+<nav class="hidden items-center gap-9 md:flex">
+<a class="text-[#100d1b] dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#home">Home</a>
+<a class="text-[#100d1b] dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#about">About</a>
+<a class="text-[#100d1b] dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#projects">Projects</a>
+<a class="text-[#100d1b] dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#contact">Contact</a>
+</nav>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-200/50 text-[#100d1b] dark:bg-gray-800 dark:text-white">
+<span class="material-symbols-outlined text-xl">dark_mode</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex h-full grow flex-col">
+<div class="w-full flex-1 flex-col">
+<section class="relative flex h-screen min-h-[600px] w-full flex-col items-center justify-center p-4" id="home">
+<div class="absolute inset-0 -z-10 bg-[linear-gradient(61deg,#3d97d0,#f4bd5f)]"></div>
+<div class="flex flex-col items-center justify-center gap-10 text-center md:flex-row md:text-left">
+<div class="order-2 flex flex-col items-center gap-6 md:order-1 md:items-start">
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl">Hello, I’m Giuliana 👋</h1>
+<h2 class="text-white/80 text-base font-normal leading-normal md:text-lg">AI Applications Developer</h2>
+</div>
+<a class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center self-center overflow-hidden rounded-lg bg-white h-12 px-5 text-base font-bold leading-normal tracking-[0.015em] text-[#3d52d0] transition-transform hover:scale-105 md:self-start md:w-auto" href="#projects">
+<span class="truncate">See Projects</span>
+</a>
+</div>
+<div class="order-1 md:order-2">
+<img class="h-40 w-40 rounded-full  object-cover dark:bg-gray-800"
+                                data-alt="Animated Memoji of a person waving" 
+                                src="images/memoji.gif" /> <!-- bg-gray-200-->
+</div>
+</div>
+<a class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" href="#about">
+<span class="material-symbols-outlined text-4xl text-white/70">keyboard_arrow_down</span>
+</a>
+</section>
+<div class="mx-auto w-full max-w-[960px] px-4">
+<section class="py-16 md:py-20" id="about">
+<h2 class="text-[#100d1b] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+<p class="text-[#100d1b]/80 dark:text-gray-300 text-base font-normal leading-relaxed pb-3 pt-1 px-4">I'm a passionate AI Applications Development student with a strong foundation in machine learning, large language models, and web development. I thrive on solving complex problems and building intelligent applications that make a difference. My goal is to leverage technology to create innovative and user-centric solutions.</p>
+</section>
+<section class="py-16 md:py-20" id="projects">
+<h2 class="text-[#100d1b] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects &amp; Articles</h2>
+<div class="flex flex-wrap items-center gap-2 px-4 py-6">
+<button class="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">All</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">Python</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">Java</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">Machine Learning</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">LLMs</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">Web Development</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">Data Visualization</button>
+<button class="rounded-full bg-gray-200/80 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">UI/UX Design</button>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-col gap-6 border-b border-gray-200/80 py-8 dark:border-gray-800/80 sm:flex-row sm:items-start">
+<div class="w-full sm:w-1/4">
+<span class="text-sm font-medium text-primary">Python</span>
+</div>
+<div class="flex-1">
+<a class="group" href="#">
+<h3 class="text-lg font-bold text-[#100d1b] dark:text-white group-hover:text-primary">AI-Powered Chatbot</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">A customer service chatbot using Natural Language Processing to understand and respond to user queries in real-time, enhancing user engagement.</p>
+</a>
+<a class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="#">
+                                        Learn more <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+<div class="ml-auto flex-shrink-0">
+<img alt="Project thumbnail" class="h-24 w-24 rounded-lg bg-gray-100 object-cover dark:bg-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwKtzr95qTRFT7iqh4V2Hj5fhaI6ySHJ3ydS5nbVs7mYJHwQwnv1I2ocNMlUM8_OfaxfZCgs7kbx-GuzDHVKyD5S7j6YCUHTzmyGse9t7d_wyRIlMi_sDQ9RRIEiV4UmZ55lA3N62d6p8zJMIgsKsss7S0mwdzq7wrI6TwJU4bvdJHNNyjRL4Q01o00OfLzj6tOueCkED7u8_DNrcjgQ-Nj_LfSZKJZ9Ucluyer56A4QwZMwP5rAup78WMEs1rGC_VWjqAOZsMdvU"/>
+</div>
+</div>
+<div class="flex flex-col gap-6 border-b border-gray-200/80 py-8 dark:border-gray-800/80 sm:flex-row sm:items-start">
+<div class="w-full sm:w-1/4">
+<span class="text-sm font-medium text-primary">Machine Learning</span>
+</div>
+<div class="flex-1">
+<a class="group" href="#">
+<h3 class="text-lg font-bold text-[#100d1b] dark:text-white group-hover:text-primary">Image Recognition App</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">A mobile application that identifies objects in images using a custom-trained convolutional neural network for high accuracy.</p>
+</a>
+<a class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="#">
+                                        Learn more <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+<div class="ml-auto flex-shrink-0">
+<img alt="Project thumbnail" class="h-24 w-24 rounded-lg bg-gray-100 object-cover dark:bg-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfIo-NFifekl8iU47xWW9NnzyLLdqRZQe_gn1YTsOwumsmNLjRNbIPvoZ_w7ZJBX4RXdz2yrFaH7xQSODlbW-8GvBxSsd4tNEndh3oB2xDHr9yOHZ0sS1NV3iYTC2nX_ZX_ESgntsqwVr-I73eTPige7EvTMLC1LQ0c8ZHl0plMDz15s5Rq18PahSVeeUwqikKypWZiTpR0WsPMp2cAXmJRohvwNcqaIPpW_9-MwAeRhzN1jqSLmAu2O3_8hZpTR9u0ksYCaITOY4"/>
+</div>
+</div>
+<div class="flex flex-col gap-6 border-b border-gray-200/80 py-8 dark:border-gray-800/80 sm:flex-row sm:items-start">
+<div class="w-full sm:w-1/4">
+<span class="text-sm font-medium text-primary">Web Development</span>
+</div>
+<div class="flex-1">
+<a class="group" href="#">
+<h3 class="text-lg font-bold text-[#100d1b] dark:text-white group-hover:text-primary">Sentiment Analysis Tool</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">A web-based tool that analyzes text input to determine its emotional tone, built with React and a Python backend for real-time analysis.</p>
+</a>
+<a class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="#">
+                                        Learn more <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+<div class="ml-auto flex-shrink-0">
+<img alt="Project thumbnail" class="h-24 w-24 rounded-lg bg-gray-100 object-cover dark:bg-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXPjzNcCoADgDLw-ckxvGozma5tvFiXTYB1O8tJrqLn3dEX2JVchSy_g4wCWCDoVk4JU11FbT7YWjJWHVk4swJ0VH2zFcYNvem37DZVU1QBuuZVyMklgHVA4iTG8IBsm-7-3KBlckgsGY0x7-Lm-ePzi5z-f5lU9PXtOEm6vDcVn6__ATuKLMlLQqncWy2hw2aGH6TSbHqXGsHT3R8HA3Mym_haEe53UhQMu7XR0zwvmRld3ZtyS_4zXJgYuHrAOE0hfwqjtmtzws"/>
+</div>
+</div>
+<div class="flex flex-col gap-6 border-b border-gray-200/80 py-8 dark:border-gray-800/80 sm:flex-row sm:items-start">
+<div class="w-full sm:w-1/4">
+<span class="text-sm font-medium text-primary">UI/UX Design</span>
+</div>
+<div class="flex-1">
+<a class="group" href="#">
+<h3 class="text-lg font-bold text-[#100d1b] dark:text-white group-hover:text-primary">Portfolio Website Redesign</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">A case study on redesigning a personal portfolio to improve user experience and visual appeal, focusing on a clean and modern aesthetic.</p>
+</a>
+<a class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="#">
+                                        Learn more <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+<div class="ml-auto flex-shrink-0">
+<img alt="Project thumbnail" class="h-24 w-24 rounded-lg bg-gray-100 object-cover dark:bg-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI-bjD9JVAK5UyHXut86MRW6qFuPj5aqV7-3i2oBg0MwQzL8rHHMIdzablhxmDEyuY2MG9zxOG7O4uTs7s-xbvFUb1ZOwxJsDYJ6aU6Gr5LCtR4xDpXMESzUvGGQapx5BEl6HN6H4FTz3rFj883zrBTytMifKRmUrS4jNSWLCeO30cBH985jtXIgiH7bs0Xw7MrRMpi1LmXPpvew4rmdLs941Xll9DK6z0MeSHSOA1-MQ6sYXedE6iDtSr7rwQ0l4OB4XOiDKP6M"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 text-center md:py-20" id="contact">
+<h2 class="text-[#100d1b] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Get In Touch</h2>
+<p class="text-[#100d1b]/80 dark:text-gray-300 text-base font-normal leading-relaxed pb-6 pt-1 px-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!</p>
+<a class="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#3d52d0] h-12 px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-transform hover:scale-105" href="mailto:hello@giuliana.ai">
+<span class="truncate">Say Hello</span>
+</a>
+</section>
+</div>
+</div>
+</main>
+<footer class="border-t border-gray-200/50 dark:border-gray-800/50">
+<div class="mx-auto flex max-w-[960px] flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-gray-500 dark:text-gray-400 sm:flex-row">
+<p>© 2024 Giuliana. All rights reserved.</p>
+<div class="flex items-center gap-4">
+<a class="hover:text-[#3d52d0] dark:hover:text-white" href="#">GitHub</a>
+<a class="hover:text-[#3d52d0] dark:hover:text-white" href="#">LinkedIn</a>
+<a class="hover:text-[#3d52d0] dark:hover:text-white" href="#">Email</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
