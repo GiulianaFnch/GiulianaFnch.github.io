@@ -1,92 +1,130 @@
 <!DOCTYPE html>
+<html class="light" lang="en">
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Provisional Index Page</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#197fe6",
-              "background-light": "#f6f7f8",
-              "background-dark": "#111921",
-            },
-            fontFamily: {
-              "display": ["Inter", "sans-serif"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Giuliana's Projects</title>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="portfolio/images/icon.svg" /> 
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#197fe6",
+            "background-light": "#f6f7f8",
+            "background-dark": "#111921",
           },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
         },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-    </style>
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
 </head>
+
 <body class="font-display">
-<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<div class="flex flex-1 justify-center p-4 sm:p-6 md:p-8">
-<main class="layout-content-container flex flex-col w-full max-w-4xl flex-1">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 px-6 sm:px-10 py-4">
-<div class="flex items-center gap-3 text-gray-900 dark:text-white">
-<div class="text-primary">
-<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900 dark:text-white">Projects Index</h2>
-</div>
-</header>
-<div class="flex flex-col items-center flex-1 py-12 sm:py-16 md:py-24">
-<div class="text-center px-4">
-<h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">Choose a Project</h1>
-<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Select one of the projects below to continue.</p>
-</div>
-<div class="w-full max-w-4xl p-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-<a class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-left transition-all hover:border-primary/50 dark:hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/10" href="pets/index.html">
-<div class="text-primary">
-<span class="material-symbols-outlined text-4xl">pets</span>
-</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-lg font-bold text-gray-900 dark:text-white">Pet Sitting</h2>
-<p class="text-gray-600 dark:text-gray-400 text-sm">A platform for sharing my pet sitting work and experiences.</p>
-</div>
-</a>
-<a class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-left transition-all hover:border-primary/50 dark:hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/10" href="cavalos/index.html">
-<div class="text-primary">
-<span class="material-symbols-outlined text-4xl">circle</span>
-</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-lg font-bold text-gray-900 dark:text-white">Equestrian Site</h2>
-<p class="text-gray-600 dark:text-gray-400 text-sm">A page for my equestrian experiences and photographies.</p>
-</div>
-</a>
-<a class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-left transition-all hover:border-primary/50 dark:hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/10" href="portfolio/index.html">
-<div class="text-primary">
-<span class="material-symbols-outlined text-4xl">neurology</span>
-</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-lg font-bold text-gray-900 dark:text-white">AI Projects</h2>
-<p class="text-gray-600 dark:text-gray-400 text-sm">A collection of my artificial intelligence projects.</p>
-</div>
-</a>
-</div>
-</div>
-<footer class="flex flex-col gap-6 px-5 py-10 text-center">
-<p class="text-gray-500 dark:text-gray-400 text-sm">© 2024 Project Hub</p>
-</footer>
-</main>
-</div>
-</div>
-</div>
-</body></html>
+  <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="flex flex-1 justify-center p-4 sm:p-6 md:p-8">
+        <main class="layout-content-container flex flex-col w-full max-w-4xl flex-1">
+          
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 px-6 sm:px-10 py-4">
+            <div class="flex items-center gap-3 text-gray-900 dark:text-white">
+              <div class="text-primary">
+                <svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900 dark:text-white">Giuliana's Hub</h2>
+            </div>
+          </header>
+
+          <div class="flex flex-col items-center flex-1 py-12 sm:py-16 md:py-24">
+            
+            <div class="text-center px-4">
+              <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
+                Choose a Project</h1>
+              <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Hi there! :) Select one of the projects below to continue:</p>
+            </div>
+
+            <div class="w-full max-w-4xl p-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <a class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-left transition-all hover:border-primary/50 dark:hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/10"
+                href="pets/index.html">
+                <div class="text-primary">
+                  <span class="material-symbols-outlined text-4xl">pets</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900 dark:text-white">Pet Sitting</h2>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">A platform for sharing my pet sitting work and experiences.</p>
+                </div>
+              </a>
+
+              <a class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-left transition-all hover:border-primary/50 dark:hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/10"
+                href="cavalos/index.html">
+                <div class="text-primary">
+                  <span class="material-symbols-outlined text-4xl">chess_knight</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900 dark:text-white">Equestrian Site</h2>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">A page for my equestrian experiences and photographies.</p>
+                </div>
+              </a>
+
+              <a class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-left transition-all hover:border-primary/50 dark:hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/10"
+                href="portfolio/index.html">
+                <div class="text-primary">
+                  <span class="material-symbols-outlined text-4xl">neurology</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900 dark:text-white">AI Projects</h2>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">A collection of my artificial intelligence projects.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="flex flex-col items-center mt-16 px-4">
+                <div class="relative flex items-center w-full max-w-xs py-4">
+                    <div class="flex-grow border-t border-gray-300 dark:border-gray-700"></div>
+                    <span class="flex-shrink-0 mx-4 text-gray-500 text-sm">OR</span>
+                    <div class="flex-grow border-t border-gray-300 dark:border-gray-700"></div>
+                </div>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-4 text-center">Go check my GitHub:</p>
+                
+                <a href="https://github.com/GiulianaFnch" target="_blank" rel="noopener noreferrer" 
+                   class="flex items-center gap-3 px-6 py-3 rounded-xl bg-[#24292f] text-white hover:bg-[#24292f]/90 transition-all shadow-md hover:shadow-xl dark:bg-white dark:text-[#24292f]">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    <span class="font-semibold">GiulianaFnch</span>
+                </a>
+            </div>
+
+          </div>
+
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center border-t border-gray-100 dark:border-gray-800">
+            <p class="text-gray-500 dark:text-gray-400 text-sm">© 2026 Giuliana's Hub</p>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
